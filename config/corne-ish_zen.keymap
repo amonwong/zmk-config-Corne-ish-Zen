@@ -49,15 +49,15 @@
                         label = "NUMPAD";
                         bindings = < 
 // -----------------------------------------------------------------------------------------
-// | TAB  |  _  |  PREV  |  PLAY  |  NEXT  |  VolUP  |   |  7  |  8   |  9  |  \  |  P  | BKSP |
-// | NLOK |  _  |  _  |  _  |  _  |  VOLDN  |   |  4  |  5   |  6 |  L  |  ;  |  '   |
-// | SHFT |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | nument | arrowSPC  | ALT |
+// | TAB  |  _  | PREV|PLAY |NEXT |  VolUP  |   |  7  |  8   |  9  |  \  |  P  | BKSP |
+// | NLOK |  _  |  _  |  _  |  _  |  VOLDN  |   |  4  |  5   |  6  |  L  |  ;  |  '   |
+// | SHFT |  —  |  —  |  _  |  _  |  MUTE   |   |  1  |  2   |  3  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |       | nument | arrowSPC  | ALT |
 
-   &kp TAB &none &kp K_PREV &kp K_PP &kp K_NEXT &kp K_VOL_UP  &kp KP_N7  &kp KP_N8 &kp KP_N9 &kp KP_BSLH    &kp KP_MINUS &kp BSPC
-   &kp KP_NLCK &none &none &none &kp  &kp K_VOL_DN            &kp KP_N4  &kp KP_N5 &kp KP_N6 &kp KP_PLUS    &none        &none
-   &tog NUMPAD &none &none &none &none &kp K_MUTE             &kp KP_N1  &kp KP_N2 &kp KP_N3 &kp KP_ENTER   &none &none
-              &mo CONFIG &kp LCTL &mo NUMROW                  &none &kp KP_N0 &kp KP_DOT
+   &kp TAB &none &kp PREV &kp PP &kp NEXT &kp K_VOL_UP        &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
+   &kp KP_NLCK &none &none &none &kp  &kp K_VOL_DN            &kp N4  &kp N5 &kp N6 &kp PLUS    &none        &none
+   &tog NUMPAD &none &none &none &none &kp K_MUTE             &kp N1  &kp N2 &kp N3 &kp ENTER   &none &none
+              &mo CONFIG &kp LCTL &mo NUMROW                  &none &kp N0 &kp DOT
                         >;
                 };
 
