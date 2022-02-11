@@ -54,9 +54,9 @@
 // | SHFT |  —  |  —  |  _  |  _  |  MUTE   |   |  1  |  2   |  3  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |       | nument | arrowSPC  | ALT |
 
-   &kp TAB &none &kp PREV &kp PP &kp NEXT &kp K_VOL_UP        &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
-   &kp KP_NLCK &none &none &none &kp  &kp K_VOL_DN            &kp N4  &kp N5 &kp N6 &kp PLUS    &none        &none
-   &tog NUMPAD &none &none &none &none &kp K_MUTE             &kp N1  &kp N2 &kp N3 &kp ENTER   &none &none
+   &kp TAB &none &k PREV &k PP &k NEXT &k K_VOL_UP        &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
+   &kp KP_NLCK &none &none &none &none  &k K_VOL_DN            &kp N4  &kp N5 &kp N6 &kp PLUS    &none        &none
+   &tog NUMPAD &none &none &none &none &k K_MUTE             &kp N1  &kp N2 &kp N3 &kp ENTER   &none &none
               &mo CONFIG &kp LCTL &mo NUMROW                  &none &kp N0 &kp DOT
                         >;
                 };
