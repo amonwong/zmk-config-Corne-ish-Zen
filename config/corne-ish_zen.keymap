@@ -77,7 +77,7 @@
 // -----------------------------------------------------------------------------------------
 // |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &    |  *     |  (  |  )  | BSPC |
 // | SHFT |  `  |  -  |  _  |  [  |  ]  |   |     | UP    |        |  {  |  }  |   \  |
-// | CTRL |     |  =  | +   | SS  | CAPS|   | LEFT| DOWN  |RIGHT | |     |  |   |
+// | GUI  |     |  =  | +   | SS  | CAPS|   | LEFT| DOWN  |RIGHT | |     |  |   |
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
    &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp BSPC
    &kp LSHFT  &kp GRAVE &kp MINUS &kp UNDER  &kp LBKT       &kp RBKT     &none     &kp UP     &none     &kp LBRC  &kp RBRC  &kp BSLH
