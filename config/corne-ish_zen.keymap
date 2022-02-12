@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY 0
-#define GAMING 1
+#define WINDOWS 1
 #define NUMPAD 2
 #define SYMROW 3
 #define ADJUST 4
@@ -30,23 +30,28 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | GUI  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
+                        bindings = <
+   &kp TAB    &kp Q  &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O    &kp P    &kp BSPC
+   &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L    &kp SEMI &kp SQT
+   &kp LGUI   &kp Z  &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT  &kp FSLH &kp ESC
+              &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER           &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
+                        >;
+                };
+
+                WINDOWS_layer {
+                        label = "WINDOWS";
+// -----------------------------------------------------------------------------------------
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | LCTRL|  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
                         bindings = <
    &kp TAB    &kp Q  &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O    &kp P    &kp BSPC
    &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L    &kp SEMI &kp SQT
    &kp LCTRL   &kp Z  &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT  &kp FSLH &kp ESC
-              &kp LALT &kp LGUI &kp SPACE          &lt NUMPAD ENTER &lt SYMROW SPACE  &kp CONFIG
-                        >;
-                };
-
-                gaming_layer {
-                        label = "GAMING";
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LALT  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp ENTER
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-               &kp LCTRL &mo SYMROW &kp SPACE    &kp SPACE &mo ADJUST &kp F13
+              &kp LALT &kp LGUI &kp SPACE          &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
                         >;
                 };
 
@@ -56,13 +61,13 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  _  |PREV |PLAY |NEXT |  VolUP |   |  7  |  8   |  9  |  \  |  -  | BSPC |
 // | SHFT |  _  |  _  |  _  |  _  |  VOLDN |   |  4  |  5   |  6  |  +  |  _  |  _   |
-// | CTRL |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  ENT|  _  | _    |
+// | LGUI |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  ENT|  _  | _    |
 //                    | LALT| LGUI|  SPC   |   | nument | 0  | . |
 
    &kp TAB   &none &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_UP           &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
    &kp LSHFT &none &none      &none    &none      &kp C_VOL_DN           &kp N4  &kp N5 &kp N6 &kp PLUS    &none     &none
-   &kp LCTRL  &none &none      &none    &none      &kp C_MUTE             &kp N1  &kp N2 &kp N3 &kp ENTER   &none     &none
-              &kp LALT &kp LGUI &kp SPACE                                  &lt NUMPAD ENTER &kp N0 &kp DOT
+   &kp LGUI  &none &none      &none    &none      &kp C_MUTE             &kp N1  &kp N2 &kp N3 &kp ENTER   &none     &none
+              &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER                 &lt NUMPAD ENTER &kp N0 &kp DOT
                         >;
                 };
 
@@ -76,28 +81,38 @@
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
    &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp BSPC
    &kp LSHFT  &kp GRAVE &kp MINUS &kp UNDER  &kp LBKT       &kp RBKT     &none     &none     &kp UP     &kp LBRC  &kp RBRC  &kp BSLH
-   &kp LCTRL   &none     &kp EQUAL &kp PLUS   &kp LS(LG(N4)) &kp CAPS     &none     &kp LEFT  &kp DOWN   &kp RIGHT &none     &kp PIPE 
-                          &kp LALT &kp LGUI &kp SPACE                      &lt NUMPAD ENTER &lt SYMROW SPACE  &kp CONFIG
+   &kp LGUI   &none     &kp EQUAL &kp PLUS   &kp LS(LG(N4)) &kp CAPS     &none     &kp LEFT  &kp DOWN   &kp RIGHT &none     &kp PIPE 
+                 &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER              &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
                         >;
                 };
 
                 adjust_layer {
                         label = "ADJUST";
                         bindings = <
+// -----------------------------------------------------------------------------------------
+// |  F1  | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | F12 |
+// | CAPS | INS | HOME| PGUP|     |     |   |     |     |     |     |     |     |
+// |NUMPAD| DEL | F12 | PGDN|     |     |   |     |  -  |  =  |  \  |     |     |
+//                    |     |     |     |   |     |     | WIN |
    &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
-   &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none   &none
+   &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &none    &none    &none  &none     &none   &none
    &tog NUMPAD &kp DEL &kp END  &kp PG_DN &none  &none     &none    &none    &none  &none     &none   &none
-                           &kp LGUI &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &tog GAMING
+                           &kp LGUI &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &tog WINDOWS
                         >;
                 };
 
                 config_layer {
                         label = "CONFIG";
                         bindings = <
-   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
+/ -----------------------------------------------------------------------------------------
+// | RESET|     |     |     |     |     |   |     |     |     |     |     |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
+// | CAPS |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |     |     |     |   |     |     |     |
+   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &tog WINDOWS 
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
-                                                &mo CONFIG &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &kp F13
+                                                &mo CONFIG &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &none
                         >;
                 };
         };
