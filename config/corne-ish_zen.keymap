@@ -12,7 +12,7 @@
 #define QWERTY 0
 #define GAMING 1
 #define NUMPAD 2
-#define FUNROW 3
+#define SYMROW 3
 #define ADJUST 4
 #define CONFIG 5
 
@@ -76,7 +76,7 @@
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
    &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp BSPC
    &kp LSHFT  &kp GRAVE &kp MINUS &kp UNDER  &kp LBKT       &kp RBKT     &none     &none     &kp UP          &kp LBRC  &kp RBRC  &kp BSLH
-   &kp LCTL   &none     &kp EQUAL &kp PLUS   &kp LS(LG(N4)) &kp CAPS     &none     &kp LEFT  &kp DOWN        &kp RIGHT &none     &kp PIPE 
+   &kp LCTL   &none     &kp EQUAL &kp PLUS   &kp LS(LGUI(N4)) &kp CAPS     &none     &kp LEFT  &kp DOWN        &kp RIGHT &none     &kp PIPE 
                           &kp LALT &kp LGUI &kp SPACE                      &mt NUMPAD ENTER &mt SYMROW SPACE  &kp CONFIG
                         >;
                 };
