@@ -75,13 +75,13 @@
                         label = "SYMROW";
                         bindings = <
 // -----------------------------------------------------------------------------------------
-// |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | SHFT |  `  |  -  |  _  |  [  |  ]  |   |     |     |  UP |  {  |  }  |   \  |
-// | CTRL |     |  =  | +   | SS  | CAPS|   |     | LEFT|DOWN |RIGHT|     |  |   |
+// |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &    |  *     |  (  |  )  | BSPC |
+// | SHFT |  `  |  -  |  _  |  [  |  ]  |   |     | UP    |        |  {  |  }  |   \  |
+// | CTRL |     |  =  | +   | SS  | CAPS|   | LEFT| DOWN  |RIGHT | |     |  |   |
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
    &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp BSPC
-   &kp LSHFT  &kp GRAVE &kp MINUS &kp UNDER  &kp LBKT       &kp RBKT     &none     &none     &kp UP     &kp LBRC  &kp RBRC  &kp BSLH
-   &kp LGUI   &none     &kp EQUAL &kp PLUS   &kp LS(LG(N4)) &kp CAPS     &none     &kp LEFT  &kp DOWN   &kp RIGHT &none     &kp PIPE 
+   &kp LSHFT  &kp GRAVE &kp MINUS &kp UNDER  &kp LBKT       &kp RBKT     &none     &kp UP     &none     &kp LBRC  &kp RBRC  &kp BSLH
+   &kp LGUI   &none     &kp EQUAL &kp PLUS   &kp LS(LG(N4)) &kp CAPS     &kp LEFT  &kp DOWN  &kp RIGHT   &none &none     &kp PIPE 
                  &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER              &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
                         >;
                 };
