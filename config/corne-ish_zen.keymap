@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY 0
-#define WINDOWS 1
+#define WINDOW 1
 #define NUMPAD 2
 #define SYMROW 3
 #define ADJUST 4
@@ -40,8 +40,8 @@
                         >;
                 };
 
-                WINDOWS_layer {
-                        label = "WINDOWS";
+                windows_layer {
+                        label = "WINDOW";
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -97,7 +97,7 @@
    &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
    &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &none    &none    &none  &none     &none   &none
    &tog NUMPAD &kp DEL &kp END  &kp PG_DN &none  &none     &none    &none    &none  &none     &none   &none
-                           &kp LGUI &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &tog WINDOWS
+                           &kp LGUI &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &tog WINDOW
                         >;
                 };
 
@@ -109,7 +109,7 @@
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
 // | CAPS |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     |     |   |     |     |     |
-   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &tog WINDOWS 
+   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &tog WINDOW 
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
    &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
                                                 &mo CONFIG &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &none
