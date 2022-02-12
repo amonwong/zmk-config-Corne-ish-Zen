@@ -34,9 +34,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | nument | numrow SPC  | config |
                         bindings = <
-   &kp TAB     &kp Q  &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K    &kp L   &kp QUOT &kp ENTER
-   &kp LCTL    &kp Z  &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
+   &kp TAB    &kp Q  &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
+   &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K    &kp L   &kp QUOT &kp SQT
+   &kp LCTL   &kp Z  &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp ESC
               &kp LALT &kp LGUI &kp SPC          &mt NUMPAD ENTER &mt NUMROW SPACE  &kp CONFIG
                         >;
                 };
@@ -55,10 +55,10 @@
                         label = "NUMPAD";
                         bindings = < 
 // -----------------------------------------------------------------------------------------
-// | TAB  |  _  |PREV |PLAY |NEXT |  VolUP |   |  7  |  8   |  9  |  \  |  P  | BKSP |
-// | NLOK |  _  |  _  |  _  |  _  |  VOLDN |   |  4  |  5   |  6 |  L  |  ;  |  '   |
-// | SHFT |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |      | nument | arrowSPC  | ALT |
+// | TAB  |  _  |PREV |PLAY |NEXT |  VolUP |   |  7  |  8   |  9  |  \  |  -  | BKSP |
+// | NLOK |  _  |  _  |  _  |  _  |  VOLDN |   |  4  |  5   |  6  |  +  |  _  |  _   |
+// | SHFT |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  ENT|  _  | _    |
+//                    | GUI | LWR | SPC |      | nument | 0  | . |
 
    &kp TAB &none &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_UP           &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BKSP
    &none &none  &none      &none    &none      &kp C_VOL_DN           &kp N4  &kp N5 &kp N6 &kp PLUS    &none     &none
