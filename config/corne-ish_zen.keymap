@@ -29,13 +29,13 @@
                         label = "QWERTY";
 
 // -----------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
                         bindings = <
-   &kp TAB    &kp Q  &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K    &kp L   &kp QUOT &kp SQT
+   &kp TAB    &kp Q  &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BSPC
+   &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K    &kp L   &kp SEMI &kp SQT
    &kp LCTL   &kp Z  &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp ESC
               &kp LALT &kp LGUI &kp SPC          &mt NUMPAD ENTER &mt SYMROW SPACE  &kp CONFIG
                         >;
@@ -55,12 +55,12 @@
                         label = "NUMPAD";
                         bindings = < 
 // -----------------------------------------------------------------------------------------
-// | TAB  |  _  |PREV |PLAY |NEXT |  VolUP |   |  7  |  8   |  9  |  \  |  -  | BKSP |
+// | TAB  |  _  |PREV |PLAY |NEXT |  VolUP |   |  7  |  8   |  9  |  \  |  -  | BSPC |
 // | SHFT |  _  |  _  |  _  |  _  |  VOLDN |   |  4  |  5   |  6  |  +  |  _  |  _   |
 // | CTRL |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  ENT|  _  | _    |
 //                    | LALT| LGUI|  SPC   |   | nument | 0  | . |
 
-   &kp TAB   &none &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_UP           &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BKSP
+   &kp TAB   &none &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_UP           &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
    &kp LSHFT &none &none      &none    &none      &kp C_VOL_DN           &kp N4  &kp N5 &kp N6 &kp PLUS    &none     &none
    &kp LCTL  &none &none      &none    &none      &kp C_MUTE             &kp N1  &kp N2 &kp N3 &kp ENTER   &none     &none
               &kp LALT &kp LGUI &kp SPC                                  &mt NUMPAD ENTER &kp N0 &kp DOT
@@ -71,7 +71,7 @@
                         label = "SYMROW";
                         bindings = <
 // -----------------------------------------------------------------------------------------
-// |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// |  `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | SHFT |  `  |  -  |  _  |  [  |  ]  |   |     |     |  UP |  {  |  }  |   \  |
 // | CTRL |     |  =  | +   | SS  | CAPS|   |     | LEFT|DOWN |RIGHT|     |  |   |
 //                    | LALT| LGUI|  SPC|   | nument | SYMROW SPC  | config |
