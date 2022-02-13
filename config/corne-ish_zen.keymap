@@ -36,7 +36,7 @@
    &kp TAB    &kp Q  &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O    &kp P    &kp BSPC
    &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L    &kp SEMI &kp SQT
    &kp LGUI   &kp Z  &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT  &kp FSLH &kp ESC
-              &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER           &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
+              &mt LALT LC(LG(SPACE)) &lt SYMROW SPACE &lt NUMPAD ENTER           &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
                         >;
                 };
 
@@ -51,7 +51,7 @@
    &kp TAB    &kp Q  &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I     &kp O    &kp P    &kp BSPC
    &kp LSHFT  &kp A  &kp S &kp D &kp F &kp G     &kp H &kp J &kp K     &kp L    &kp SEMI &kp SQT
    &kp LCTRL   &kp Z  &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT  &kp FSLH &kp ESC
-              &kp LALT &kp LGUI &kp SPACE          &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
+              &mt LALT LC(LG(SPACE)) &kp LGUI &kp SPACE          &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
                         >;
                 };
 
@@ -67,7 +67,7 @@
    &kp TAB   &kp C_BRI_INC &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_UP   &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
    &kp LSHFT &kp C_BRI_DEC &none      &none    &none      &kp C_VOL_DN   &kp N4  &kp N5 &kp N6 &kp PLUS    &none     &none
    &kp LGUI  &none &none   &none      &none    &kp C_MUTE                &kp N1  &kp N2 &kp N3 &kp ENTER   &none     &none
-              &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER                 &lt NUMPAD ENTER &kp N0 &kp DOT
+              &mt LALT LC(LG(SPACE)) &lt SYMROW SPACE &lt NUMPAD ENTER                 &lt NUMPAD ENTER &kp N0 &kp DOT
                         >;
                 };
 
@@ -82,7 +82,7 @@
    &kp TILDE  &kp EXCL  &kp AT    &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &kp BSPC
    &kp LSHFT  &kp GRAVE &kp MINUS &kp UNDER  &kp LBKT       &kp RBKT     &none     &kp UP     &none     &kp LBRC  &kp RBRC  &kp BSLH
    &kp LGUI   &none     &kp EQUAL &kp PLUS   &kp LS(LG(N4)) &kp CAPS     &kp LEFT  &kp DOWN  &kp RIGHT   &none &none     &kp PIPE 
-                 &kp LALT &lt SYMROW SPACE &lt NUMPAD ENTER              &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
+                 &mt LALT LC(LG(SPACE)) &lt SYMROW SPACE &lt NUMPAD ENTER              &lt NUMPAD ENTER &lt SYMROW SPACE  &mo CONFIG
                         >;
                 };
 
@@ -97,7 +97,7 @@
    &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
    &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &none    &none    &none  &none     &none   &none
    &tog NUMPAD &kp DEL &kp END  &kp PG_DN &none  &none     &none    &none    &none  &none     &none   &none
-                           &kp LGUI &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &tog WINDOW
+                           &mt LALT LC(LG(SPACE)) &kp LCTRL &mo SYMROW    &kp SPACE &mo ADJUST &tog WINDOW
                         >;
                 };
 
