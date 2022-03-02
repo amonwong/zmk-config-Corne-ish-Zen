@@ -61,13 +61,13 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  |  _  |PREV |PLAY |NEXT |  VolUP |   |  7  |  8   |  9  |  \  |  -  | BSPC |
 // | SHFT |  _  |  _  |  _  |  _  |  VOLDN |   |  4  |  5   |  6  |  +  |  _  |  _   |
-// | LGUI |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  ENT|  _  | _    |
-//                    | LALT| LGUI|  SPC   |   | nument | 0  | . |
+// | LGUI |  —  |  —  |  _  |  _  |  MUTE  |   |  1  |  2   |  3  |  ENT|  .  | _    |
+//                    | LALT| LGUI|  SPC   |   | nument | NUMPAD SPC  | 0 |
 
    &kp TAB   &kp C_BRI_INC &kp C_PREV &kp C_PP &kp C_NEXT &kp C_VOL_UP   &kp N7  &kp N8 &kp N9 &kp BSLH    &kp MINUS &kp BSPC
    &kp LSHFT &kp C_BRI_DEC &none      &none    &none      &kp C_VOL_DN   &kp N4  &kp N5 &kp N6 &kp PLUS    &none     &none
-   &kp LGUI  &none &none   &none      &none    &kp C_MUTE                &kp N1  &kp N2 &kp N3 &kp ENTER   &none     &none
-              &mt LALT LC(LG(SPACE)) &lt NUMPAD SPACE &lt SYMROW ENTER                 &lt SYMROW ENTER &kp N0 &kp DOT
+   &kp LGUI  &none &none   &none      &none    &kp C_MUTE                &kp N1  &kp N2 &kp N3 &kp ENTER   &DOT     &none
+              &mt LALT LC(LG(SPACE)) &lt NUMPAD SPACE &lt SYMROW ENTER                 &lt SYMROW ENTER &lt NUMPAD SPACE &kp N0
                         >;
                 };
 
